@@ -1,8 +1,9 @@
 export default {
-  pattern: '^(feature|bugfix|chore|test)/[0-9]+/[a-z0-9]+(-[a-z0-9]+)*$|(hotfix|release)/[0-9]+\\.[0-9]+\\.[0-9]+$',
+  pattern:
+    '^(feat|bugfix|chore|test)/[0-9]+/[a-z0-9]+(-[a-z0-9]+)*$|(hotfix|release)/[0-9]+\\.[0-9]+\\.[0-9]+$',
 
   examples: [
-    'feature/1234/add-login-ui',
+    'feat/1234/add-login-ui',
     'bugfix/23/fix-login-error',
     'chore/987/update-dependencies',
     'test/456/write-login-tests',
@@ -11,4 +12,4 @@ export default {
   ],
 
   exclude: ['main', 'develop']
-};
+}
