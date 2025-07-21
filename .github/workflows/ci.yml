@@ -26,8 +26,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Lint
+      - name: ESLint Check
         run: pnpm lint
+
+      - name: Prettier Format Check
+        run: pnpm format:check
 
       - name: Type Check
         run: pnpm type-check
