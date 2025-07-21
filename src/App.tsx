@@ -14,14 +14,11 @@ const App = () => {
           minHeight: '100vh',
           display: 'flex',
           flexDirection: 'column',
-          maxWidth: '1920px ',
-          marginLeft: 'auto',
-          marginRight: 'auto',
           width: '100%'
         }}
       >
         <Header />
-        <Box className='main-content' component='main'>
+        <Box sx={{ flexGrow: 1, width: '100%' }}>
           <Suspense fallback={<CircularProgress />}>
             <Outlet />
           </Suspense>

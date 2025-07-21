@@ -9,7 +9,8 @@ const HomePage = () => {
         display: 'flex',
         flexDirection: 'column',
         position: 'relative',
-        padding: '20px'
+        padding: '20px',
+        width: '100%'
       }}
     >
       {a}
