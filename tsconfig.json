@@ -19,6 +19,8 @@
     "paths": {
       "~/*": ["*"],
       "~/shared/*": ["./src/shared/*"],
+      "~/router/*": ["./src/router/*"],
+      "~/pages/*": ["./src/pages/*"],
       "~scss": ["./design-system/scss/"],
       "~scss-components/*": ["./design-system/components/*"]
     }
