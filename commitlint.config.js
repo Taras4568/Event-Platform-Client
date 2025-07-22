@@ -6,6 +6,7 @@ export default {
       'always',
       [
         'feat', // A new feature
+        'opel-zafira',
         'fix', // A bug fix
         'docs', // Documentation changes
         'style', // Code style changes (formatting, etc)

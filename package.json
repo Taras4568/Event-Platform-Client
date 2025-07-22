@@ -26,6 +26,7 @@
     "@tanstack/eslint-plugin-query": "^5.81.2",
     "eslint-plugin-testing-library": "^7.6.0",
     "husky": "^9.1.7",
+    "pnpm": "^10.13.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "vite-tsconfig-paths": "^5.1.4"
