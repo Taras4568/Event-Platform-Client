@@ -1,4 +1,4 @@
-export interface UserAvatar {
+export interface UserAvatarProps {
   name: string
   imageUrl?: string
 }

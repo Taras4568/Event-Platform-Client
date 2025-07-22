@@ -1,8 +1,8 @@
 import { Avatar, IconButton, Tooltip } from '@mui/material'
 import { Link } from 'react-router-dom'
-import type { UserAvatar } from '~/src/types/interfaces/header'
+import type { UserAvatarProps } from '~/src/types/interfaces/header'
 import { style } from './UserAvatar.style'
-const UserAvatar = (user: UserAvatar) => {
+const UserAvatar = (user: UserAvatarProps) => {
   return (
     <Tooltip title='Профіль'>
       <IconButton
