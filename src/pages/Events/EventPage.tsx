@@ -1,12 +1,6 @@
-import { Link } from 'react-router-dom'
 import { Box, Typography } from '@mui/material'
 import EventFilters from '~/shared/containers/eventFilters/eventFilters'
-
-const mockEvents = [
-  { id: '1', name: 'Концерт гурту "Океан Ельзи"' },
-  { id: '2', name: 'Виставка сучасного мистецтва' },
-  { id: '3', name: 'Майстер-клас з гончарства' }
-]
+import EventsGrid from '~/shared/containers/eventsGrid/eventsGrid'
 
 const EventsPage = () => {
   return (
@@ -15,13 +9,7 @@ const EventsPage = () => {
         Список Подій
       </Typography>
       <EventFilters />
-      <ul>
-        {mockEvents.map((event) => (
-          <li key={event.id}>
-            <Link to={`/events/${event.id}`}>{event.name}</Link>
-          </li>
-        ))}
-      </ul>
+      <EventsGrid />
     </Box>
   )
 }

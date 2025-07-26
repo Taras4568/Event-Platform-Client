@@ -11,5 +11,10 @@ export const styles = {
     alignItems: 'center',
     justifyContent: 'space-between',
     px: { xs: 2, md: 3 }
+  },
+  logoAndInput: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center'
   }
 }

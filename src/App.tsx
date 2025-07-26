@@ -1,6 +1,6 @@
 import { Suspense } from 'react'
 import { Outlet } from 'react-router-dom'
-import { Box, CircularProgress } from '@mui/material'
+import { Box, CircularProgress, Container } from '@mui/material'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { Header } from '~/shared/components/header/Header'
 
@@ -13,16 +13,19 @@ const App = () => {
         sx={{
           minHeight: '100vh',
           display: 'flex',
-          flexDirection: 'column',
-          width: '100%'
+          flexDirection: 'column'
         }}
       >
         <Header />
-        <Box sx={{ flexGrow: 1, width: '100%' }}>
-          <Suspense fallback={<CircularProgress />}>
+        <Container component='main' maxWidth='xl' sx={{ flexGrow: 1, py: 3 }}>
+          <Suspense
+            fallback={
+              <CircularProgress sx={{ display: 'block', mx: 'auto' }} />
+            }
+          >
             <Outlet />
           </Suspense>
-        </Box>
+        </Container>
       </Box>
     </QueryClientProvider>
   )

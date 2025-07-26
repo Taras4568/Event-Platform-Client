@@ -1,8 +1,9 @@
-import { Box, Input } from '@mui/material'
+import { Box } from '@mui/material'
 import UserAvatar from '~/shared/components/user-avatar/UserAvatar'
 import ButtonInHeader from '~/shared/components/NavBar/Button/ButtonInHeader'
 import Logo from '~/shared/components/logo/Logo'
 import { styles } from './Header.style'
+import SearchInput from '~/shared/components/search-input/SearchInput'
 
 export const Header = () => {
   const user = {
@@ -12,9 +13,11 @@ export const Header = () => {
 
   return (
     <Box component={'header'} sx={styles.mainHeader}>
-      <Box>
+      <Box sx={styles.logoAndInput}>
         <Logo />
-        <Input />
+        <Box sx={{ ml: 3 }}>
+          <SearchInput placeholder={'Search events'} width={600} />
+        </Box>
       </Box>
       <Box>
         <ButtonInHeader linkTo={'/tickets'} title={'Tickets'} />
