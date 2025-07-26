@@ -14,7 +14,7 @@ const priceOptions = [
   { value: '200-300', label: '200 - 300 грн' },
   { value: '300-500', label: '300 - 500 грн' },
   { value: '500-1000', label: '500 - 1000 грн' },
-  { value: '1000', label: 'більше 1000 грн' },
+  { value: '1000', label: 'більше 1000 грн' }
 ]
 
 const categoryOptions = [
